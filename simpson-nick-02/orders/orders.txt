@@ -1,2 +1,4 @@
 21:59, 6th September 2018	12 tires 	1 oil	22 spark plugs	$1356.41	33 woodwhere street
 22:02, 6th September 2018	200 tires 	66 oil	99 spark plugs	$19687.36	22 nowhere street
+22:13, 6th September 2018	0 tires 	0 oil	0 spark plugs	$0	
+22:13, 6th September 2018	0 tires 	0 oil	0 spark plugs	$0	

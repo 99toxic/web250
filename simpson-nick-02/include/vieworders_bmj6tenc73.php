@@ -33,5 +33,10 @@ $document_root = $_SERVER[ 'DOCUMENT_ROOT' ];
 </body>
 </html>
 <?php
-echo "<mm:dwdrfml documentRoot=" . __FILE__ .">";$included_files = get_included_files();foreach ($included_files as $filename) { echo "<mm:IncludeFile path=" . $filename . " />"; } echo "</mm:dwdrfml>";
+echo "<mm:dwdrfml documentRoot=" . __FILE__ . ">";
+$included_files = get_included_files();
+foreach ( $included_files as $filename ) {
+  echo "<mm:IncludeFile path=" . $filename . " />";
+}
+echo "</mm:dwdrfml>";
 ?>

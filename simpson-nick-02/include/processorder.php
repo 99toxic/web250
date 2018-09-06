@@ -78,7 +78,7 @@ $date = date( 'H:i, jS F Y' );
 
   echo "<p>Address to ship is to " . htmlspecialchars( $address ) . "</p>";
 
-  $outputstring = $date. "\t".$tireqty." tires \t".$oilqty." oil\t".$sparkqty." spark plugs\t\$".$totalamount."\t". $address."\n";
+  $outputstring = $date . "\t" . $tireqty . " tires \t" . $oilqty . " oil\t" . $sparkqty . " spark plugs\t\$" . $totalamount . "\t" . $address . "\n";
 
   //Open a file for appending''    
   $fp = fopen( "$document_root/school/web-250/simpson-nick-02/orders/orders.txt", 'ab' );
@@ -87,13 +87,13 @@ $date = date( 'H:i, jS F Y' );
     echo "<p><strong>Your order could not be processed at this time. Please try again later.</strong></p>";
     exit;
   }
-  
-  flock($fp, LOCK_EX);
-  
-  fwrite($fp, $outputstring, strlen($outputstring));
-  flock($fp, LOCK_UN);
-  fclose($fp);
-  
+
+  flock( $fp, LOCK_EX );
+
+  fwrite( $fp, $outputstring, strlen( $outputstring ) );
+  flock( $fp, LOCK_UN );
+  fclose( $fp );
+
   echo "<p>Order written.</p>";
 
   ?>
