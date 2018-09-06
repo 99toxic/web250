@@ -1,0 +1,18 @@
+/* CSS Document */
+
+
+table {
+  border: 0px;
+  padding: 3px;
+}
+.trhead {
+  background: #ccc;
+  text-align: center;
+}
+.trhead td {
+  width: 150px;
+  text-align: center;
+}
+.submit {
+  text-align: center;
+}

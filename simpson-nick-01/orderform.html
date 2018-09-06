@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!--Stylesheets-->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<!--End Stylesheets-->
+
+<title>Bob's Basic Order Form</title>
+</head>
+<body>
+<form action="include/processorder.php" method="post">
+  <table>
+    <tr class="trhead">
+      <td>Item</td>
+      <td>Quantity</td>
+    </tr>
+    <tr>
+      <td>Tires</td>
+      <td><input type="text" name="tireqty" size="3" maxlength="3"></td>
+    </tr>
+    <tr>
+      <td>Oil</td>
+      <td><input type="text" name="oilqty" size="3" maxlength="3"></td>
+    </tr>
+    
+      <td>Spark Plugs</td>
+      <td><input type="text" name="sparkqty" size="3" maxlength="3"></td>
+    <tr>
+      <td>How did you find Bob's?</td>
+      <td><select name="find" id="select">
+          <option value="a">I'm a regular customer</option>
+          <option value="b">TV advertising</option>
+          <option value="c">Phone directory</option>
+          <option value="d">Word of mouth</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="submit" value="Submit Order"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

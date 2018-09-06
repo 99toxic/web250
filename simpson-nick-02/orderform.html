@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!--Stylesheets-->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<!--End Stylesheets-->
+
+<title>Bob's Basic Order Form</title>
+</head>
+<body>
+<form action="include/processorder.php" method="post">
+  <table>
+    <tr class="trhead">
+      <td>Item</td>
+      <td>Quantity</td>
+    </tr>
+    <tr>
+      <td><label for="tireqty">Tires</label></td>
+      <td><input type="text" name="tireqty" size="3" maxlength="3"></td>
+    </tr>
+    <tr>
+      <td><label for="oilqty">Oil</label></td>
+      <td><input type="text" name="oilqty" size="3" maxlength="3"></td>
+    </tr>
+    
+      <td><label for="sparkqty">Spark Plugs</label></td>
+      <td><input type="text" name="sparkqty" size="3" maxlength="3"></td>
+    <tr>
+      <td><label for="address">Shipping Address</label></td>
+      <td><input type="text" name="address" size="50" maxlength="50"></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="submit"><input type="submit" value="Submit Order"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
